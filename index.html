@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>irateyou</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="Kanye.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <h1>irateyou.com :)</h1>
+    <div id="userPreferences">
+      <h2>User Preferences</h2>
+      <label>Preferred Height:</label>
+      <select id="heightPreference">
+        <option value="tall">Tall</option>
+        <option value="short">Short</option>
+        <option value="average">Average</option>
+        <option value="both">Both</option>
+      </select>
+
+      <label>Preferred Skin Tone:</label>
+      <select id="skinPreference">
+        <option value="light">Light Skinned</option>
+        <option value="dark">Dark Skinned</option>
+        <option value="both">Both</option>
+      </select>
+
+      <button onclick="startRanking()">Start Ranking</button>
+    </div>
+
+    <div id="questions" style="display: none;">
+      <h2>Ranking Questions</h2>
+      <label>Does she have clear/smooth skin?</label>
+      <select id="smoothSkin">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label>Does she have premium skin?</label>
+      <select id="premiumSkin">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label>Does she have a good smile?</label>
+      <select id="smile">
+        <option value="yes">Yes</option>
+        <option value="mid">Mid</option>
+        <option value="no">No</option>
+      </select>
+
+      <label>Does she have a nice body shape?</label>
+      <select id="bodyShape">
+        <option value="yes">Yes</option>
+        <option value="mid">Mid</option>
+        <option value="no">No</option>
+      </select>
+
+      <label>Is she light skinned or dark skinned?</label>
+      <select id="skinTone">
+        <option value="light">Light Skinned</option>
+        <option value="dark">Dark Skinned</option>
+      </select>
+
+      <label>Is she tall or short?</label>
+      <select id="height">
+        <option value="tall">Tall</option>
+        <option value="average">Average</option>
+        <option value="short">Short</option>
+      </select>
+
+      <button onclick="calculateScore()">Calculate Rating</button>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h2>Result</h2>
+      <p id="rating"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
