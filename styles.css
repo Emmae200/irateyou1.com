@@ -41,16 +41,17 @@ body {
   flex-direction: column; 
   min-height: 100vh;
   margin: 0;
-  background-color: rgba(239, 16, 16, 0.6);
-  color: #333;
+  background-image: url(rate2bg.jpg);
+  background-size: cover;
+  /* background-color: rgba(239, 16, 16, 0.6); */
+  /* color: #333; */
 }
 
 main {
   display: flex;
   justify-content: center; 
   align-items: center;     
-  min-height: 100vh;       
-  padding-top: 35px;       
+  min-height: 100vh;           
   box-sizing: border-box;
 }
 
@@ -59,9 +60,10 @@ main {
     margin-top: 60px;
     align-self: center;
     max-width: 500px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 2em;
     border-radius: 10px;
+    
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeIn 1s ease-in-out;
