@@ -11,6 +11,7 @@
     min-height: 100vh;
     margin: 0;
     background-image: url(rate2bg.jpg);
+    background-size: contain;
     color: #333;
     margin-bottom: 25px;
   }
